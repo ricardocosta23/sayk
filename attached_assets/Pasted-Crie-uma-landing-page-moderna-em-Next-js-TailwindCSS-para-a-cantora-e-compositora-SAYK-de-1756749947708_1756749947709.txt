@@ -1,0 +1,43 @@
+Crie uma landing page moderna em **Next.js + TailwindCSS** para a cantora e compositora **SAYK**, de 17 anos.
+
+### Estrutura da página:
+1. **Hero Section**:
+   - Fundo moderno (gradiente escuro com cor vibrante).
+   - Foto circular da SAYK no centro.
+   - Nome artístico em destaque: “SAYK”.
+   - Subtítulo: “Cantora & Compositora”.
+   - Botão: “Ouça no Spotify” → link para o perfil: https://open.spotify.com/intl-pt/artist/12Ys5kuQchhjGCZVKa92L2.
+
+2. **Sobre**:
+   - Título: “Sobre”.
+   - Bio completa da SAYK (use o texto abaixo, formatado com espaçamento e ênfase em citações):
+     ```
+     SAYK — psychology, psyche, psycho —, uma jovem cantora e compositora brasileira de apenas 17 anos, busca transmitir a complexidade e a dualidade do ser humano através de letras enigmáticas e melodias coloridas, sempre trazendo consigo temáticas sociais e pessoais relevantes. Sua música é caracterizada pela alternância entre o inglês e o português, fato que se explica pela sua fluência em ambos os idiomas e pela sensação de não estar nem lá nem cá, dado aos anos que morou fora do Brasil. Sendo uma grande apreciadora das artes e dos inúmeros ritmos mundiais, SAYK incorpora em seus projetos uma variedade de gêneros musicais, que vão desde o samba ao trap, do funk ao pop, todas essas batidas viciantes entrelaçadas para criar seu estilo único. "Estou muito feliz de finalmente poder compartilhar a minha arte com o mundo. Que assim eu consiga espalhar cor." Em breve, SAYK transportará os seus ouvintes para o mundo da lua com o seu álbum de estréia, APOLLO, que será lançado aos poucos no decorrer de 2024 e 2025.
+     ```
+
+3. **Músicas**:
+   - Título: “Músicas”.
+   - Três players do Spotify (embed oficial):
+     - (A)mazon/Tacama → https://open.spotify.com/intl-pt/track/6lWwPTXvt8i8t9g2LW8Zd6
+     - Xeque-Mate → https://open.spotify.com/intl-pt/track/0pssMQyWY6nns1rEA4wYWJ
+     - Dindin → https://open.spotify.com/intl-pt/track/6wITkbwjZrPU4h6NNC4yjS
+
+4. **Portfólio / Media Kit**:
+   - Botão para baixar PDF: “Baixar Media Kit”.
+   - Grid com fotos (placeholders).
+   - Embed de vídeo do YouTube (substituir pelo ID real quando disponível).
+
+5. **Contato / Redes Sociais**:
+   - E-mail profissional fictício: contato@sayk.com.
+   - Links: Instagram, TikTok, YouTube, Spotify.
+   - Layout limpo, ícones modernos.
+
+### Estilo:
+- Minimalista, jovem e impactante.
+- Fundo escuro com detalhes em lilás/roxo neon.
+- Tipografia elegante, fácil de ler.
+- Layout responsivo (mobile-first).
+- Botões arredondados com animações hover.
+
+### Deploy:
+- O projeto deve estar pronto para ser hospedado no **Vercel**.

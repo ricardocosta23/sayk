@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 95%);
+  --card: hsl(240, 10%, 6%);
+  --card-foreground: hsl(0, 0%, 90%);
+  --primary: hsl(140, 100%, 45%);
+  --primary-foreground: hsl(240, 10%, 4%);
+  --secondary: hsl(25, 100%, 55%);
+  --secondary-foreground: hsl(240, 10%, 4%);
+  --muted: hsl(240, 10%, 8%);
+  --muted-foreground: hsl(0, 0%, 60%);
+  --accent: hsl(200, 100%, 50%);
+  --accent-foreground: hsl(240, 10%, 4%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(0, 0%, 95%);
+  --border: hsl(240, 10%, 12%);
+  --input: hsl(240, 10%, 8%);
+  --ring: hsl(140, 100%, 45%);
+  --orange: hsl(25, 100%, 55%);
+  --orange-foreground: hsl(240, 10%, 4%);
+  --magenta: hsl(320, 100%, 60%);
+  --magenta-foreground: hsl(240, 10%, 4%);
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Playfair Display', 'Oswald', serif, system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .floating-card {
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+
+  .floating-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .spotify-embed {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
