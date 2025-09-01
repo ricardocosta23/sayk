@@ -13,7 +13,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: path.resolve(__dirname, "dist"), // absolute path to project-root/dist
+    outDir: path.resolve(__dirname, "client/dist"), // absolute path to project-root/dist
     emptyOutDir: true,
     rollupOptions: {
       input: path.resolve(__dirname, "client/index.html"),
