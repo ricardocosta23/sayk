@@ -14,7 +14,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: path.resolve(__dirname, "dist"), // output to project-root/dist
+    outDir: "../dist", // output to project-root/dist
     emptyOutDir: true,
     rollupOptions: {
       input: path.resolve(__dirname, "client/index.html"), // entry point
