@@ -11,13 +11,17 @@
       "dest": "/api/index.ts"
     },
     {
+      "src": "/(.*\\.js|.*\\.css|.*\\.png|.*\\.ico|.*\\.svg|.*\\.json)",
+      "dest": "/client/dist/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/client/dist/index.html"
     }
   ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "client/dist",
   "env": {
     "NODE_ENV": "production"
-  },
-  "buildCommand": "npm run build",
-  "outputDirectory": "client/dist"
+  }
 }
